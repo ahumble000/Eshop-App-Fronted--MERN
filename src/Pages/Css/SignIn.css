@@ -1,0 +1,99 @@
+.sign-in-form{
+    width: 100%;
+    min-height: 75vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+.sign-in-form .sign-in{
+    width: 31%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 22px;
+    /* height: 70%; */
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 2px 3px 15px rgba(43, 40, 40, .24);
+}
+
+.sign-in-form .sign-in h2{
+    display: inline-block;
+    position: relative;
+    font-size: 1.6rem;
+    color: #1b1b1b;
+    letter-spacing: 1.5px;
+    /* font-weight: 600; */
+    margin-bottom: 13px;
+}
+
+.sign-in-form .sign-in h2:before{
+    content: '';
+    position: absolute;
+    bottom: -13px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    border-radius: 5px;
+    background: linear-gradient(to right, rgb(223, 61, 183), rgb(218, 77, 77));
+    transition: all 0.8s ease;  
+}
+
+
+.sign-in-form .sign-in .sign-in-area{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    /* gap: 4px; */
+}
+
+.sign-in-form .sign-in .sign-in-area input{
+    width: 100%;
+    padding: 12px;
+    font-size: .9rem;
+    border: 1px solid rgba(128, 128, 128, 0.359);
+    outline: none;
+}
+
+.sign-in-form .sign-in .sign-in-area button{
+    cursor: pointer;
+    background: linear-gradient(to right,rgb(223, 61, 183),rgb(218, 77, 77));
+    border: none;
+    outline: none;
+    margin-top: 12px;
+    padding: 11px;
+    font-size: 1rem;
+    color: #fff;
+    border-radius: 5px;
+    transition: all .4s;
+}
+
+.sign-in-form .sign-in .sign-in-area button:hover{
+    background: linear-gradient(to right,rgb(239, 43, 190),rgb(245, 52, 52));
+}
+
+.sign-in-form .sign-in .sign-in-area:last-child{
+    flex-direction: row;
+    align-items: center;
+}
+
+.sign-in-form .sign-in .sign-in-area:last-child input[type='checkbox']{
+    width: 13%;
+    height: 15px;
+}
+
+.sign-in-form .sign-in .sign-in-area p{
+    width: 87%;
+    font-size: .8rem;
+}
+
+.sign-in-form .sign-in .sign-in-area p span{
+    cursor: pointer;
+    margin-left: 5px;
+    font-size: .85rem;
+    color: rgb(245, 52, 52);
+}
